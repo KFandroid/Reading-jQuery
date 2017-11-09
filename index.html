@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="sizzle.js"></script>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<div id="text">
+    <p>
+        <input type="text" />
+    </p>
+    <div class="Aaron">
+        <input type="checkbox" name="readme" />
+        <p>Sizzle</p>
+        <p><span class="red">
+            123321112233
+        </span></p>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+
+        console.log( Sizzle('div > div.Aaron p span.red')  )
+
+        console.log( document.querySelectorAll('div > div.Aaron p span.red')  )
+
+    }
+</script>
+</html>
