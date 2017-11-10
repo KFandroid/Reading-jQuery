@@ -27,10 +27,17 @@
 </body>
 <script>
     window.onload = function() {
+        console.log(Sizzle.tokenize('div > p + div.aaron input[type="checkbox"]'));
+        console.log(Sizzle('div > p + div.aaron input[type="checkbox"]')) ;
+//        console.log(Sizzle.tokenize('div > p + .aaron[type="checkbox"], #id:first-child'));
+//
+//        console.log( Sizzle.tokenize('div > div.Aaron p span.red'))
+//
+//        console.log( Sizzle('div > div.Aaron p span.red')  )
 
-        console.log( Sizzle('div > div.Aaron p span.red')  )
+//        console.log( document.querySelectorAll('div > div.Aaron p span.red')  )
 
-        console.log( document.querySelectorAll('div > div.Aaron p span.red')  )
+
 
     }
 </script>
