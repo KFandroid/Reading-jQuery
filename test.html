@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DIY一个jQuery教程</title>
+    <title>DIY A JQ</title>
+    <script>
+        $ = 'old $';
+        jQuery = 'old JQ'
+    </script>
+    <script src="DIYjQuery.js"></script>
 </head>
 <body>
-    <div>123</div>
+
+<div>hello world</div>
 </body>
+<script>
+    var $div = $('div');
+    $div.setBackground('yellow');
+
+    var $$$ = $.noConflict(true);
+    console.log($);
+    console.log(jQuery);
+    console.log($$$);
+</script>
 </html>
